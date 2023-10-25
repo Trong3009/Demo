@@ -1,0 +1,19 @@
+<template>
+    <div class="header">
+        rerer
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'TheHeader',
+}
+</script>
+
+<style>
+    .header{
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+    }
+</style>

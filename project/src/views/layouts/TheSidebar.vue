@@ -30,7 +30,13 @@ export default {
 </script>
 
 <style>
-  
+  nav{
+    width: 100%;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+  }
   nav a {
     font-weight: bold;
     color: #2c3e50;

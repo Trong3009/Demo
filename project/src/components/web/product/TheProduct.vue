@@ -45,7 +45,13 @@ export default {
                 name: 'Nike Zoom KD 12',
                 price: '100,000',
                 size: 'Kích cỡ',
-            }
+            },
+			{
+                src: require('../../../assets/images/shoe/Nike12.png'),
+                name: 'Nike Zoom KD 13',
+                price: '99,000',
+                size: 'Kích cỡ',
+            },
         ];
         return {
             productsItem
@@ -67,13 +73,13 @@ export default {
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	height: 100vh;
 	overflow: hidden;
+	height: 200vh;
+	scroll-behavior: smooth;
 }
 
 .card {
-	margin: 120px auto;
+	margin: 16px;
 	width: 320px;
 	height: 400px;
 	background-color: #272d40;

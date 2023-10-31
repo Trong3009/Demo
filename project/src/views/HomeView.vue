@@ -14,3 +14,10 @@ export default {
   },
 };
 </script>
+<style>
+.home{
+  display: flex;
+  flex-direction: row;
+  column-gap: 56px;
+}
+</style>

@@ -32,15 +32,17 @@ export default {
 <style>
   nav{
     width: 100%;
-    height: 94px;
+    height: 64px;
     display: flex;
     flex-direction: row;
     column-gap: 8px;
   }
   nav a {
+    margin: 8px;
+    width: 40px;
+    height: 48px;
     font-weight: bold;
     color: #2c3e50;
-    background-color: #2c3e50;
   }
   
   nav a.nav-item.router-link-exact-active {
@@ -48,7 +50,10 @@ export default {
     background-color: aliceblue;
   }
   .nav-main{
-    width: 36px;
-    height: 24px;
+    width: 86px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>

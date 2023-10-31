@@ -18,6 +18,7 @@ export default {
 .home{
   display: flex;
   flex-direction: row;
-  column-gap: 56px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 </style>

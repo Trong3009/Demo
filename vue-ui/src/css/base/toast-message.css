@@ -1,0 +1,59 @@
+/* css chung cho toast message */
+.toast-message {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    min-height: 56px;
+}
+
+.toast-message__content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-message__type {
+    margin: 0 4px 0 10px;
+}
+
+.toast-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    min-width: 450px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.078);
+}
+
+.toast-message__type {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.toast-message__desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+/* success toast message */
+.toast-message__type--success {
+    color: #50B83C;
+}
+
+/* error toast message */
+.toast-message__type--error {
+    color: #de3618;
+}
+
+/* warning toast message */
+.toast-message__type--warning {
+    color: #f49342;
+}
+
+/* info toast message */
+.toast-message__type--info {
+    color: #009eeb;
+}

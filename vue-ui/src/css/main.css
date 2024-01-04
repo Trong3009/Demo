@@ -1,0 +1,71 @@
+@import url(./base/input.css);
+
+/* declare variable */
+:root {
+    /* declare color */
+    --color-primary: #007AFF;
+    --color-hover: #3395FF;
+    --color-nav-hover: #E6F2FF;
+    --color-focus: #0062CC;
+    --color-disable: #66AFFF;
+    --color-row-select: #E6F2FF;
+    --color-secondary: #FF6D00;
+    --color-secondary-background: #FBE9E7; 
+    --color-border-default:#E0E0E0;
+    --color-delete: #DE3618;
+    --color-delete-hover: #feeeee;
+
+    /* declare size */
+    --header-height: 56px;
+    --sidebar-width: 200px;
+}
+
+/* declare font */
+@font-face {
+    font-family: Google sans;
+    src: url(../assets/font/GoogleSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: Google sans;
+    src: url(../assets/font/GoogleSans-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Google sans;
+    src: url(../assets/font/GoogleSans-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    font-family: Google sans, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden !important;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content {
+    display: flex;
+}
+
+.v-enter-active {
+  animation: fadein 1s ease;
+}
+
+@keyframes fadein {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 8px;
+    }
+}

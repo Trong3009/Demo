@@ -1,0 +1,388 @@
+/* css div wrapper icon */
+.icon-wrapper {
+	position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* css description for icon */
+.icon-wrapper:hover .icon-desc {
+	display: block;
+}
+
+.icon-desc {
+	position: absolute;
+	top: 30px;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #003166;
+	padding: 6px 8px;
+	border-radius: 6px;
+	border-top: 1px solid #fff;
+	display: none;
+}
+
+.icon-desc-pseudo {
+	position: absolute;
+	top: 28px;
+	width: 16px;
+	height: 16px;
+	background-color: #003166;
+	transform: rotate(45deg);
+	display: none;
+}
+
+.icon-desc--top {
+	top: -46px;
+	border-top: none;
+	border-bottom: 1px solid #fff;;
+}
+
+/* css description on top */
+.icon-desc-pseudo--top {
+	top: -28px
+}
+
+.icon-wrapper:hover .icon-desc-pseudo {
+	display: block;
+}
+
+/* some icon */
+.icon {
+	position: relative;
+}
+
+.icon::after {
+	content: '';
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+}
+
+.toggle {
+    background: url('../../assets/img/sprites.svg') no-repeat -196px -4px;
+	width: 16px;
+	height: 16px;
+}
+
+.setting--gray {
+    background: url('../../assets/img/sprites.svg') no-repeat -266px -170px;
+	width: 20px;
+	height: 20px;
+}
+
+.book {
+    background: url('../../assets/icon/ic-document-help.svg') no-repeat -2px -3px;
+	width: 20px;
+	height: 17px;
+}
+
+.more {
+    background: url('../../assets/icon/ic-more-gray.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.question {
+    background: url('../../assets/img/sprites.svg') no-repeat -50px -50px;
+	width: 20px;
+	height: 20px;
+}
+
+.notify {
+    background: url('../../assets/img/sprites.svg') no-repeat -27px -50px;
+	width: 18px;
+	height: 20px;
+}
+
+.dashboard {
+    background: url('../../assets/icon/ic-dashboard.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.dashboard::after {
+	background: url('../../assets/icon/ic-dashboard-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.movement {
+    background: url('../../assets/icon/ic-movement.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.movement::after {
+    background: url('../../assets/icon/ic-movement-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.reward {
+    background: url('../../assets/icon/ic-reward.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.reward::after {
+    background: url('../../assets/icon/ic-reward-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.decision {
+    background: url('../../assets/icon/ic-decision-menu.svg') no-repeat -4px -2px;
+	width: 17px;
+	height: 20px;
+	position: relative;
+}
+
+.decision::after {
+    background: url('../../assets/icon/ic-decision-menu-active.svg') no-repeat -4px -2px;
+	width: 17px;
+	height: 20px;
+}
+
+.profile {
+    background: url('../../assets/icon/ic-profile.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.profile::after {
+    background: url('../../assets/icon/ic-profile-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.search {
+    background: url('../../assets/icon/ic-search.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+}
+
+.search::after {
+    background: url('../../assets/icon/ic-search-active.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+}
+
+.search--gray {
+	background: url('../../assets/icon/ic-search-gray.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+}
+
+.report {
+    background: url('../../assets/icon/ic-report.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.report::after {
+    background: url('../../assets/icon/ic-report-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.category {
+    background: url('../../assets/icon/ic-category.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.category::after {
+    background: url('../../assets/icon/ic-category-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.setting {
+    background: url('../../assets/icon/ic-setting.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.setting::after {
+    background: url('../../assets/icon/ic-setting-setting.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.guide {
+    background: url('../../assets/icon/ic-guide.svg') no-repeat -3px -2px;
+	width: 18px;
+	height: 20px;
+	position: relative;
+}
+
+.guide::after {
+    background: url('../../assets/icon/ic-guide-active.svg') no-repeat -3px -2px;
+	width: 18px;
+	height: 20px;
+}
+
+.arrow-right {
+	background: url('../../assets/icon/ic-arrow-black-right.svg') no-repeat -8px -7px;
+	width: 7px;
+	height: 10px;
+	position: relative;
+}
+
+.arrow-right::after {
+	background: url('../../assets/icon/ic-arrow-color-right.svg') no-repeat -8px -7px;
+	width: 7px;
+	height: 10px;
+}
+
+.collapse {
+	background: url('../../assets/icon/ic-collapse.svg') no-repeat -4px -6px;
+	width: 14px;
+	height: 12px;
+}
+
+.add {
+	background: url('../../assets/img/sprites.svg') no-repeat -196px -100px;
+	width: 16px;
+	height: 16px;
+}
+
+.filter {
+	background: url('../../assets/img/sprites.svg') no-repeat -100px -52px;
+	width: 16px;
+	height: 16px;
+}
+
+.down {
+	background: url('../../assets/icon/down-arrow.png');
+	width: 16px;
+	height: 16px;
+}
+
+.right {
+	background: url('../../assets/icon/right-chevron.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
+.left {
+	background: url('../../assets/icon/left-chevron.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
+.close {
+	background: url('../../assets/img/sprites.svg') no-repeat -246px -30px;
+	width: 12px;
+	height: 12px;
+}
+
+.close::after {
+	background: url('../../assets/img/sprites.svg') no-repeat -270px -30px;
+	width: 12px;
+	height: 12px;
+}
+
+.tick {
+	background: url('../../assets/img/sprites.svg') no-repeat -196px -30px;
+	width: 16px;
+	height: 12px;
+}
+
+.three-dot {
+	background: url('../../assets/img/sprites.svg') no-repeat -171px -58px;
+	width: 18px;
+	height: 4px;
+}
+
+.pencil {
+	background: url('../../assets/img/sprites.svg') no-repeat -4px -76px;
+	width: 16px;
+	height: 16px;
+}
+
+.wrapper:has(.icon-warning) {
+	width: 36px;
+	height: 36px;
+}
+
+.warning {
+	background: url('../../assets/icon/warning.png');
+	background-size: contain;
+	width: 32px;
+	height: 32px;
+}
+
+.success {
+	background: url('../../assets/icon/success.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+.avatar {
+    background-image: url(../../assets/img/avatar-default.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.logo {
+    height: 36px;
+    flex: 1;
+    background-image: url(../../assets/icon/ic-logo.svg);
+    background-position: start center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.laptop{
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1258px -1402px;
+	width: 127px;
+	height: 106px;
+}
+.error{
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -762px -146px;
+	width: 20px;
+	height: 20px;
+}
+.info{
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -706px -146px;
+	width: 20px;
+	height: 20px;
+}
+.mail{
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1153px -91px;
+	width: 21px;
+	height: 17px;
+}
+.mail:hover{
+	cursor: pointer;
+}

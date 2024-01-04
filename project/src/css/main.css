@@ -1,8 +1,0 @@
-.wrapper-app{
-    display: flex;
-    flex-direction: column;
-}
-body{
-    margin: 0;
-}
-@import url(../../node_modules/boxicons/css/boxicons.min.css);

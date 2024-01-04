@@ -8,6 +8,7 @@ import {
   InputLabel,
   MenuItem,
   Box,
+  Container,
 } from "@mui/material";
 import {
   LightMode,
@@ -52,38 +53,39 @@ function ModeSelect() {
     </FormControl>
   );
 }
-function ModeToggle() {
-  const { mode, setMode } = useColorScheme();
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
-  console.log("prefersDarkMode", prefersDarkMode);
-  console.log("prefersLightMode", prefersLightMode);
-  return (
-    <Button
-      onClick={() => {
-        setMode(mode === "light" ? "dark" : "light");
-      }}
-    >
-      {mode === "light" ? "Turn dark" : "Turn light"}
-    </Button>
-  );
-}
+
 
 function App() {
   return (
-    <>
-      <ModeSelect></ModeSelect>
-      <hr />
-      <ModeToggle></ModeToggle>
-      <hr />
-      <div>trongnguyenquy</div>
-      <Typography variant="body2" color="text.secondary">
-        sdasdasd
-      </Typography>
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-    </>
+    <Container disableGutters maxWidth={false} sx={{height:'100vh', backgroundColor:'primary.main'}} >
+      <Box sx={{
+        backgroundColor:'primary.light',
+        width:'100%',
+        height:'56px',
+        display:'flex',
+        alignItems:'center'
+      }}>
+        <ModeSelect/>
+      </Box>
+      <Box sx={{
+        backgroundColor:'primary.dark',
+        width:'100%',
+        height:'56px',
+        display:'flex',
+        alignItems:'center'
+      }}>
+        minnd
+      </Box>
+      <Box sx={{
+        backgroundColor:'primary.main',
+        width:'100%',
+        height: 'calc(100vh - 56px - 56px)',
+        display:'flex',
+        alignItems:'center'
+      }}>
+        content
+      </Box>
+    </Container>
   );
 }
 

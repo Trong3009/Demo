@@ -1,0 +1,33 @@
+.home-Dashboard{
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    height: var(--header-height);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0px 32px;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 8px;
+    align-items: center;
+}
+.container{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.container::-webkit-scrollbar-track{
+    display: none;
+}

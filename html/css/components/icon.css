@@ -1,0 +1,281 @@
+/* css div wrapper icon */
+.icon-wrapper {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon--cover-center {
+    background-color: #fff;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-default)
+}
+
+.icon--cover-center:hover {
+    background-color: #E7F5EC;
+    border-color: var(--color-hover);
+}
+
+.icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat;
+}
+
+/* some icons */
+.icon-toggle {
+    background-position: -428px -92px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-menu {
+    background-position: -847px -35px;
+    width: 16px;
+    height: 14px;
+}
+
+.icon-down {
+    background-position: -1129px -365px;
+	width: 14px;
+	height: 8px;
+}
+
+.icon-down--bold {
+    background-position: -1800px -478px;
+	width: 8px;
+	height: 5px;
+}
+
+.icon-down--sm {
+    background-position: -467px -414px;
+	width: 10px;
+	height: 5px;
+}
+
+.icon-notify {
+    background-position: -844px -520px;
+	width: 18px;
+	height: 19px;
+}
+
+.icon-user {
+    background-image: url(../../assets/icon/user.png); 
+    width: 24px !important;
+    height: 24px;
+}
+
+.icon-analytic {
+    background-position: -33px -1630px;
+	width: 18px;
+	height: 20px;
+}
+
+.icon-bag {
+    background-position: -78px -1631px;
+	width: 14px;
+	height: 19px;
+}
+
+.icon-bank {
+    background-position: -121px -1633px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-money {
+    background-position: -165px -1632px;
+	width: 16px;
+	height: 18px;
+}
+
+.icon-cart {
+    background-position: -206px -1631px;
+	width: 20px;
+	height: 18px;
+}
+
+.icon-left {
+    background-position: -36px -361px;
+	width: 8px;
+	height: 14px;
+}
+
+.icon-left--disable {
+    background-position: -36px -409px;
+	width: 8px;
+	height: 14px;
+}
+
+.icon-right {
+    background-position: -1085px -361px;
+	width: 8px;
+	height: 14px;
+}
+
+.icon-asset {
+    background-position: -382px -1632px;
+	width: 17px;
+	height: 18px;
+}
+
+.icon-folder {
+    background-position: -514px -1632px;
+	width: 16px;
+	height: 18px;
+}
+
+.icon-invoice {
+    background-position: -254px -1632px;
+	width: 14px;
+	height: 17px;
+}
+
+.icon-price {
+    background-position: -471px -1633px;
+	width: 17px;
+	height: 17px;
+}
+
+.icon-tax {
+    background-position: -427px -1634px;
+	width: 16px;
+	height: 16px;
+
+}
+
+.icon-tool {
+    background-position: -339px -1633px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon-warehouse {
+    background-position: -294px -1632px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon-more {
+    background-position: -568px -30px;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-filter {
+    background-position: -1602px -91px;
+	width: 20px;
+	height: 18px;
+}
+
+.icon-setting {
+    background-position: -1378px -89px;
+	width: 20px;
+	height: 22px;
+}
+
+.icon-reload {
+    background-position: -1098px -90px;
+	width: 20px;
+	height: 21px;
+}
+
+.icon-close {
+    background-position: -84px -316px;
+	width: 8px;
+	height: 8px;
+    cursor: pointer;
+}
+
+.icon-search {
+    background-position: -316px -148px;
+	width: 17px;
+	height: 16px;
+}
+
+.icon-func {
+    background-position: -900px -365px;
+	width: 8px;
+	height: 5px;
+}
+
+.icon-question {
+    background-position: -89px -145px;
+	width: 22px;
+	height: 22px;
+    cursor: pointer;
+}
+
+.icon-close--lg {
+    background-position: -147px -147px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-warning {
+    background-position: -817px -145px;
+	width: 22px;
+	height: 23px;
+}
+
+.icon-confirm-delete {
+    background-position: -762px -146px;
+	width: 20px;
+	height: 20px;
+}
+
+/* icon color */
+.icon--primary-color {
+    color: var(--color-primary);
+}
+
+.icon--error-color {
+    color: #de3618;
+}
+
+.icon--warning-color {
+    color: #f49342;
+}
+
+.icon--info-color {
+    color: #009eeb;
+}
+
+.icon--close-color {
+    color: #1f1f1f;
+}
+
+/* icon font size */
+.icon--xxl {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.icon--lg {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.icon--md {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+}
+
+.icon--sm {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+}
+
+/* css some special icon */
+.icon--margin-left {
+    margin-left: 12px;
+}

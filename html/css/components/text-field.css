@@ -1,0 +1,225 @@
+/* css chung cho tất cả text field */
+.text-field__title {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    margin-bottom: 8px;
+}
+
+.text-field__title span {
+    color: #e81e1e;
+    padding-left: 4px;
+}
+
+.text-field__input {
+    background: #ffffff;
+    padding: 8px 12px;
+    height: 36px;
+    min-width: 250px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.text-field__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    color: #9e9e9e;
+}
+
+/* padding right when input have icon inside */
+.text-field__input--have-icon {
+    padding-left: 40px;
+}
+
+.text-field__input--have-icon-after {
+    padding-right: 40px;
+}
+
+/* text field nomal */
+.text-field__input--nomal:focus {
+    background: #ffffff !important;
+    border-color: var(--color-primary);
+}
+
+.text-field__input--nomal:hover {
+    background: #f6f6f6;
+}
+
+/* text field error */
+.text-field__input--error {
+    border-color: #e61d1d !important;
+}
+
+.text-field__input--error:hover {
+    border-color: #e61d1d !important;
+}
+
+
+.text-field__desc-error {
+    font-weight: 400;
+    font-size: 12px;
+    color: #e61d1d;
+    margin: 6px 0 0 0;
+    min-height: 12px;
+    line-height: 12px;
+}
+
+.text-field_desc-2x {
+    height: 24px !important;
+}
+
+.text-field__desc-error--hidden {
+    visibility: hidden;
+}
+
+.text-field__input--error + .text-field__desc-error {
+    display: block !important;
+}
+
+/* read only text field */
+.text-field__input--read-only {
+    background: #ebebeb;
+}
+
+/* css icon in input field */
+.text-field__body {
+    position: relative;
+    width: fit-content
+}
+
+.text-field__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 36px !important;
+    height: 34px !important;
+    border-radius: 4px 0 0 4px ;
+    background: transparent;
+    left: 1px;
+    top: 1px;
+}
+
+.text-field__icon--after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 36px !important;
+    height: 34px !important;
+    border-radius: 0 4px 4px 0 ;
+    background: transparent;
+    right: 1px;
+    top: 1px;
+}
+
+/* validate text field and verifying text field */
+
+.text-field__input--validate, .text-field__input--verifying {
+    border-color: #50b83c;
+}
+
+/* text field with icon, with icon hover and with icon press */
+.text-field__icon--with-icon {
+    color: #666666;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.text-field__input--with-icon:hover {
+    background: #f6f6f6;
+}
+
+.text-field__input--with-icon:focus {
+    background: #ffffff;
+}
+
+.text-field__input--with-icon:focus + .text-field__icon--with-icon {
+    background: #f6f6f6;
+}
+
+/* css cho các text field combobox chung */
+.text-field__icon--combobox {
+    background: transparent;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px !important;
+    height: 34px !important;
+    border-radius: 0 4px 4px 0 ;
+    right: 1px;
+    top: 1px;
+    color: #1f1f1f !important;
+    cursor: pointer;
+}
+
+.text-field__input--combobox {
+    padding-right: 44px !important;
+}
+
+.text-field__input--combobox:focus {
+    background-color: #fff;
+    border-color: var(--color-focus);
+}
+
+/* css input radio picker gender */
+.text-field__wrapper--radio-input {
+    display: flex;
+    align-items: center;
+}
+
+.text-field__input--radio-input {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 0 8px 0 0;
+}
+
+.text-field__label--radio-input {
+    margin-right: 40px;
+}
+
+.text-field__wrapper--radio-input::-webkit-calendar-picker-indicator{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+/* css input date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -128px -312px;
+	width: 16px;
+	height: 16px;
+    border-width: thin;
+    cursor: pointer;
+}
+
+/* input type date and checkbox */
+input[type='date'] {
+    color: #999;
+    text-align: center;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm Kế Toán</title>
+    <link rel="icon" type="image/x-icon" href="../assets//img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/page/employee.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- icon toggle and logo app -->
+        <div class="header__left">
+            <div class="icon-wrapper">
+                <div class="icon icon-toggle"></div>
+            </div>
+            <div class="logo">
+            </div>
+        </div>
+        <!-- company name and user icon, info -->
+        <div class="header__right">
+            <div class="company-info">
+                <div class="icon-wrapper">
+                    <div class="icon icon-menu"></div>
+                </div>
+                <span class="company-info__name">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</span>
+                <div class="icon-wrapper">
+                    <div class="icon icon-down"></div>
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="icon-wrapper">
+                    <div class="icon icon-notify"></div>
+                </div>
+                <div class="user-info__wrapper">
+                    <div class="icon-user"></div>
+                    <div class="user-info__name">Nguyễn Quý Trọng</div>
+                    <div class="icon-wrapper">
+                        <div class="icon icon-down--sm"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu(side bar) -->
+    <div class="sidebar">
+        <!-- menu item -->
+        <div class="nav">
+            <div class="nav-item nav-item--active">
+                <div class="icon-wrapper">
+                    <div class="icon icon-analytic"></div>
+                </div>
+                <div class="nav__text">Tổng quan</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-money"></div>
+                </div>
+                <div class="nav__text">Tiền mặt</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-bank"></div>
+                </div>
+                <div class="nav__text">Tiền gửi</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-bag"></div>
+                </div>
+                <div class="nav__text">Mua hàng</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-cart"></div>
+                </div>
+                <div class="nav__text">Bán hàng</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-invoice"></div>
+                </div>
+                <div class="nav__text">Quản lý hóa đơn</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-warehouse"></div>
+                </div>
+                <div class="nav__text">Kho</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-tool"></div>
+                </div>
+                <div class="nav__text">Công cụ dụng cụ</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-asset"></div>
+                </div>
+                <div class="nav__text">Tài sản cố định</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-tax"></div>
+                </div>
+                <div class="nav__text">Thuế</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-price"></div>
+                </div>
+                <div class="nav__text">Giá thành</div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-folder"></div>
+                </div>
+                <div class="nav__text">Tổng hợp</div>
+            </div>
+        </div>
+        <!-- collapse icon -->
+        <div class="nav-action">
+            <div class="nav-item">
+                <div class="icon-wrapper">
+                    <div class="icon icon-left"></div>
+                </div>
+                <div class="nav__text">Thu gọn</div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container">
+        <!-- content header -->
+        <div class="container__header">
+            <div class="container__info">
+                <span>Nhân viên</span>
+                <div class="icon-wrapper">
+                    <div class="icon icon-down--bold"></div>
+                </div>
+            </div>
+            <div class="container__options">
+                <button class="btn btn--btn-with-icon" id="table-add-employee">
+                    <span class="btn__icon--btn-with-icon">
+                        <i class="fa-solid fa-plus icon-wrapper"></i>
+                    </span>
+                    <label class="btn__label--btn-with-icon">Thêm mới</label>
+                </button>
+                <div class="icon-wrapper icon--cover-center">
+                    <div class="icon icon-more"></div>
+                </div>
+            </div>
+        </div>
+        <!-- content data table -->
+        <div class="container__content">
+            <!-- search, filter and setting icon -->
+            <div class="content__header">
+                <div class="text-field">
+                    <div class="text-field__body">
+                        <div class="text-field__icon icon-wrapper">
+                            <div class="icon icon-search"></div>
+                        </div>
+                        <input class="text-field__input text-field__input--nomal text-field__input--have-icon text-field__input--with-icon" placeholder="Tìm kiếm trong danh sách"/>
+                    </div>
+                </div>
+                <div class="content__header-right">
+                    <div class="text-field">
+                        <div class="text-field__body">
+                            <input class="text-field__input text-field__input--nomal text-field__input--combobox" placeholder="Chọn công ty"/>
+                            <div class="text-field__icon--combobox">
+                                <div class="icon icon-down"></div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="icon-wrapper icon--cover-center">
+                        <div class="icon icon-filter"></div>
+                    </div>
+                    <div class="icon-wrapper icon--cover-center">
+                        <div class="icon icon-setting"></div>
+                    </div>
+                    <div class="icon-wrapper icon--cover-center">
+                        <div class="icon icon-reload"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- filter by type -->
+            <div class="filter">
+                <div class="filter__type">
+                    <div class="filter__type-name">
+                        <span>Email </span>bằng<span> Email</span>
+                    </div>
+                    <div class="icon icon-close"></div>
+                </div>
+                <div class="filter__delete">
+                    Xóa tất cả
+                </div>
+            </div>
+            <!-- multi select row -->
+            <div class="multi-select">
+                <span class="multi-select__title">Đã chọn tất cả 100</span>
+                <span class="multi-select__unchecked">Bỏ chọn</span>
+                <button class="multi-select__delete">
+                    <img src="../assets/icon/bin.png" alt="" srcset="">
+                    <label>Xóa tất cả</label>
+                </button>
+                <div class="icon-wrapper icon--cover-center">
+                    <img src="../assets/icon/more.png" alt="">
+                </div>
+            </div>
+            <!-- table data -->
+            <div class="content-data">
+                <table class="table table--w-100" id="table-employee">
+                    <!-- header -->
+                    <thead class="table-head content-data__header">
+                        <tr class="table-head__row">
+                            <th class="table-head__col">
+                                <input type="checkbox" class="table__check"/>
+                            </th>
+                            <th class="table-head__col" fieldName="EmployeeCode">Mã nhân viên</th>
+                            <th class="table-head__col" fieldName="FullName">Tên nhân viên</th>
+                            <th class="table-head__col table__col-gender" fieldName="Gender">Giới tính</th>
+                            <th class="table-head__col table__col-date" fieldName="DateOfBirth">Ngày sinh</th>
+                            <th class="table-head__col" fieldName="IdentityNumber" title="Số chứng minh nhân dân">Số CMND</th>
+                            <th class="table-head__col" fieldName="PositionName">Chức danh</th>
+                            <th class="table-head__col" fieldName="DepartmentName">Tên đơn vị</th>
+                            <th class="table-head__col" fieldName="BankAccountNumber">Số tài khoản</th>
+                            <th class="table-head__col" fieldName="BanhName">Tên ngân hàng</th>
+                            <th class="table-head__col" title="Chi nhánh tài khoản ngân hàng" fieldName="BanhBranch">Chi nhánh TK ngân hàng</th>
+                            <th class="table-head__col table__col-func">Chức năng</th>
+                        </tr>
+                    </thead>
+                    <!-- body -->
+                    <tbody class="table-body content-data__body">
+                        <!-- show loading when load data from server -->
+                        <div class="loading-wrapper">
+                            <div class="loading-data"></div>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+            <!-- footer -->
+            <div class="pagination">
+                <div class="table-foot__row">
+                    <div class="table-foot__total-records">
+                        Tổng: 9 bản ghi
+                    </div>
+                    <div class="table-options">
+                        <span class="table-options__title">Bản ghi/Trang</span>
+                        <div class="table-options__picker">
+                            <span class="table-options__record-number">50</span>
+                            <div class="table-options__record-icon" id="table-select-number-records">
+                                <div class="icon-down--bold icon"></div>
+                            </div>
+                            <div class="table-options__select" id="table-options__select">
+                                <div class="combobox__result-list">
+                                    <p class="combobox__result">10</p>
+                                    <p class="combobox__result">20</p>
+                                    <p class="combobox__result">30</p>
+                                    <p class="combobox__result">40</p>
+                                    <p class="combobox__result">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="table-options__record-info"><span>1</span> - <span>9</span> bản ghi</span>
+                        <div class="table-options__wrapper-btn">
+                            <div class="icon-wrapper">
+                                <div class="icon icon-left--disable"></div>
+                            </div>
+                            <div class="icon-wrapper">
+                                <div class="icon icon-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show form create employee -->
+    <div class="form-wrapper" id="form-wrapper">
+        <div class="form--employee">
+            <!-- form header -->
+            <div class="form-header">
+                <div class="form-header__right">
+                    <div class="pseudo-element--top" tabindex="0"></div>
+                    <div class="icon-wrapper icon--margin-left" id="btn-close-form" tabindex="0">
+                        <div class="icon icon-close--lg"></div>
+                    </div>
+                    <div class="icon icon-question" tabindex="0"></div>
+                </div>
+                <div class="form-header__left">
+                    <div>
+                        <label for="">Là nhà cung cấp</label>
+                        <input type="checkbox">
+                    </div>
+                    <div>
+                        <label for="">Là khách hàng</label>
+                        <input type="checkbox" id="checkbox-employee">
+                    </div>
+                    <h3 class="form-header__title">Thông tin nhân viên</h3>
+                </div>
+            </div>
+            <!-- form content -->
+            <div class="form-content">
+                <div class="form-content__top">
+                    <div class="form-content__left">
+                        <div class="form-id-name">
+                            <div class="text-field">
+                                <label class="text-field__title">Mã<span>*</span></label>
+                                <input class="text-field__input text-field__input--nomal form-id__input" id="input-code" fieldName="code"/>
+                                <p class="text-field__desc-error text-field__desc-error--hidden" id="code-error-desc"></p>
+                            </div>
+                            <div class="text-field">
+                                <label class="text-field__title">Tên<span>*</span></label>
+                                <input class="text-field__input text-field__input--nomal name-input" id="input-name" fieldName="name"/>
+                                <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                            </div>
+                        </div>
+                        <div class="text-field form-input--w-100">
+                            <label class="text-field__title">Đơn vị<span>*</span></label>
+                            <input class="text-field__input text-field__input--nomal" id="input-organization" fieldName="organization"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden" id="organization-error-desc"></p>
+                        </div>
+                        <div class="text-field form-input--w-100">
+                            <label class="text-field__title">Chức danh<span>*</span></label>
+                            <input class="text-field__input text-field__input--nomal" id="input-title" fieldName="title"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                    </div>
+                    <div class="form-content__right">
+                        <div class="form-date-gender">
+                            <div class="text-field">
+                                <label class="text-field__title">Ngày sinh<span>*</span></label>
+                                <input type="date" class="text-field__input text-field__input--nomal form-date-input" id="input-date-of-birth" fieldName="dateOfBirth"/>
+                                <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                            </div>
+                            <div class="text-field">
+                                <label class="text-field__title">Giới tính</label>
+                                <div class="text-field__wrapper--radio-input form-gender-input">
+                                    <input class="text-field__input--radio-input" type="radio" id="male" name="gender" value="0">
+                                    <label class="text-field__label--radio-input" for="male">Nam</label>
+                                    <input class="text-field__input--radio-input" type="radio" id="female" name="gender" value="1">
+                                    <label class="text-field__label--radio-input" for="female">Nữ</label>
+                                    <input class="text-field__input--radio-input" type="radio" id="other" name="gender" value="2">
+                                    <label class="text-field__label--radio-input" for="other">Khác</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-id-card__wrapper">
+                            <div class="text-field form-id-card__input">
+                                <label class="text-field__title" title="Số chứng minh nhân dân">Số CMND</label>
+                                <input class="text-field__input text-field__input--nomal" id="input-identity-id"/>
+                                <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                            </div>
+                            <div class="text-field">
+                                <label class="text-field__title">Ngày cấp</label>
+                                <input type="date" class="text-field__input text-field__input--nomal form-date-input" id="input-date-of-identity" fieldName="dateOfIdentity"/>
+                                <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                            </div>
+                        </div>
+                        <div class="text-field form-input--w-100">
+                            <label class="text-field__title">Nơi cấp</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-place-of-identity"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-content__down">
+                    <div class="text-field form-input--w-100">
+                        <label class="text-field__title">Địa chỉ</label>
+                        <input class="text-field__input text-field__input--nomal" id="input-address"/>
+                        <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                    </div>
+                    <div class="form-comunication">
+                        <div class="text-field">
+                            <label class="text-field__title">ĐT di động</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-mobile-phone"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">ĐT cố định</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-landline-phone"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Email</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-email" fieldName="email"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                    </div>
+                    <div class="form-bank">
+                        <div class="text-field">
+                            <label class="text-field__title">Tài khoản ngân hàng</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-bank-account"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Tên ngân hàng</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-bank-name"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Chi nhánh</label>
+                            <input class="text-field__input text-field__input--nomal" id="input-bank-branch"/>
+                            <p class="text-field__desc-error text-field__desc-error--hidden"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- form footer -->
+            <div class="form-footer">
+                <div>
+                    <button class="btn btn--primary" id="btn-save-and-add">Cất và Thêm</button>
+                    <button class="btn btn--secondary" id="btn-save">Cất</button>
+                </div>
+                <div>
+                    <button class="btn btn--secondary" id="btn-cancel-form">Hủy</button>
+                    <div class="pseudo-element--down" tabindex="0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show dialog warning -->
+    <div class="dialog-wrapper" id="dialog-warning">
+        <div class="dialog dialog-center">
+            <div class="dialog__header">
+                <h3 class="dialog__title">Tiêu đề</h3>
+                <i class="fa-solid fa-xmark icon-wrapper icon--close-color btn-close-dialog"></i>
+            </div>
+            <div class="dialog__body">
+                <div class="icon icon-warning"></div>
+                <p>Mô tả</p>
+            </div>
+            <div class="dialog__footer">
+                <button class="btn btn--primary btn-close-dialog">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- show dialog delete -->
+    <div class="dialog-wrapper dialog-wrapper--delete" id="dialog-delete">
+        <div class="dialog dialog-center">
+            <div class="dialog__header">
+                <h3 class="dialog__title">Xóa nhân viên</h3>
+                <i class="fa-solid fa-xmark icon-wrapper icon--close-color btn-close-delete-dialog"></i>
+            </div>
+            <div class="dialog__body">
+                <div class="icon icon-confirm-delete"></div>
+                <p>Xác nhận xóa nhân viên?</p>
+            </div>
+            <div class="dialog__footer">
+                <button class="btn btn--secondary btn-close-delete-dialog">Hủy</button>
+                <button class="btn btn--primary btn-accept-delete-dialog">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- show toast message -->
+    <div class="toast-message-wrapper">
+        <!-- success -->
+        <div class="toast-message toast-message--success">
+            <div class="toast-message__content">
+                <div class="toast-message__info">
+                    <i class="fa-solid fa-circle-check icon-wrapper icon--primary-color toast-message__icon-info"></i>
+                    <span class="toast-message__type toast-message__type--success">Thành công!&nbsp</span>
+                    <span class="toast-message__desc">Message.</span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+            </div>
+        </div>
+        <!-- error -->
+        <div class="toast-message toast-message--error">
+            <div class="toast-message__content toast-message__content--error">
+                <div class="toast-message__info toast-message__info--error">
+                    <div class="toast-message__info">
+                        <i class="fa-solid fa-circle-check icon-wrapper icon--error-color toast-message__icon-info"></i>
+                        <span class="toast-message__type toast-message__type--error">Lỗi!&nbsp</span>
+                        <span class="toast-message__desc">Message.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+            </div>
+        </div>
+        <!-- warning -->
+        <div class="toast-message toast-message--warning">
+            <div class="toast-message__content toast-message__content--warning">
+                <div class="toast-message__info">
+                    <i class="fa-solid fa-circle-exclamation icon-wrapper icon--warning-color toast-message__icon-info"></i>
+                    <span class="toast-message__type toast-message__type--warning">Cảnh báo!&nbsp</span>
+                    <span class="toast-message__desc">Message.</span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+            </div>
+        </div>
+        <!-- info -->
+        <div class="toast-message toast-message--info">
+            <div class="toast-message__content toast-message__content--info">
+                <div class="toast-message__info">
+                    <i class="fa-solid fa-circle-exclamation icon-wrapper icon--info-color toast-message__icon-info"></i>
+                    <span class="toast-message__type toast-message__type--info">Thông tin!&nbsp</span>
+                    <span class="toast-message__desc">Message.</span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- import js -->
+    <script src="../js/helpers/validate.js"></script>
+    <script src="../js/helpers/format-data.js"></script>
+    <script src="../js/helpers/message.js"></script>
+    <script src="../js/helpers/type.js"></script>
+    <script src="../js/services/service.js"></script>
+    <script src="../js/employee/employee.js"></script>
+</body>
+</html>

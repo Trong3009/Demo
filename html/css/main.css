@@ -1,0 +1,60 @@
+@import url(./components/button.css);
+@import url(./components/table.css);
+@import url(./components/combobox.css);
+@import url(./components/dialog.css);
+@import url(./components/form.css);
+@import url(./components/popup.css);
+@import url(./components/text-field.css);
+@import url(./components/toast-message.css);
+@import url(./components/icon.css);
+
+/* declare variable */
+:root {
+    --color-primary:#089740;
+    --color-hover: #39AC66;
+    --color-focus: #067933;
+    --color-disable: #6BC18D;
+    --color-border-default:#E0E0E0;
+}
+
+* {
+    font-family: Noto sans, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/* declare font */
+@font-face {
+    font-family: Noto sans;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: Noto sans;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Noto sans;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+    font-style: italic;
+}
+
+/* css demo component */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 4px 36px 20px 36px;
+}
+
+.col__title {
+    display: block;
+    padding: 20px 0;
+}

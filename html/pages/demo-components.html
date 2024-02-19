@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Style Guidline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <!-- button -->
+    <div class="container">
+        <h2>Button</h2>
+        <div class="row">
+            <!-- nút chính -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Nút chính</label>
+                    <div>
+                        <button class="btn btn--primary">Button</button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Nút chính Disable</label>
+                    <div>
+                        <button class="btn btn--primary" disabled>Button</button>
+                    </div>
+                </div>
+            </div>
+            <!-- nút phụ -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Nút phụ</label>
+                    <div>
+                        <button class="btn btn--secondary">Button</button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Nút phụ Disable</label>
+                    <div>
+                        <button class="btn btn--secondary" disabled>Button</button>
+                    </div>
+                </div>
+            </div>
+            <!-- link button -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Link Button</label>
+                    <div>
+                        <button class="btn btn--link">Button</button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Link Button Diable</label>
+                    <div>
+                        <button class="btn btn--link" disabled>Button</button>
+                    </div>
+                </div>
+            </div>
+            <!-- icon button -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Icon Button</label>
+                    <div>
+                        <button class="btn btn--icon">
+                            <i class="fa-solid fa-plus icon-wrapper icon--primary-color"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Icon Button Disable</label>
+                    <div>
+                        <button class="btn btn--icon" disabled>
+                            <i class="fa-solid fa-plus icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- combo button -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Combo Button</label>
+                    <div>
+                        <button class="btn btn--combo">
+                            <label class="btn__label--combo">Button</label>
+                            <span class="btn__icon--combo">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Combo Button Disable</label>
+                    <div>
+                        <button class="btn btn--combo" disabled>
+                            <label class="btn__label--combo">Button</label>
+                            <span class="btn__icon--combo">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- button with icon -->
+            <div class="col">
+                <div>
+                    <label class="col__title">Button with Icon</label>
+                    <div>
+                        <button class="btn btn--btn-with-icon">
+                            <span class="btn__icon--btn-with-icon">
+                                <i class="fa-solid fa-plus icon-wrapper"></i>
+                            </span>
+                            <label class="btn__label--btn-with-icon">Button</label>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="col__title">Button with Icon Diable</label>
+                    <div>
+                        <button class="btn btn--btn-with-icon" disabled>
+                            <span class="btn__icon--btn-with-icon">
+                                <i class="fa-solid fa-plus icon-wrapper"></i>
+                            </span>
+                            <label class="btn__label--btn-with-icon">Button</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- text feild -->
+    <div class="container">
+        <h2>Text Field</h2>
+        <div class="row">
+            <!-- nomal text field -->
+            <div class="col">
+                <label class="col__title">Nomal Input Field</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <input class="text-field__input text-field__input--nomal" placeholder="Place holder"/>
+                </div>
+            </div>
+            <!-- error text field -->
+            <div class="col">
+                <label class="col__title">Error Input Field</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <input class="text-field__input text-field__input--error"/>
+                    <p class="text-field__desc-error">&#60Tên trường&#62không được để trống</p>
+                </div>
+            </div>
+            <!-- read only text field -->
+            <div class="col">
+                <label class="col__title">Read Only Input Field</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <input class="text-field__input text-field__input--read-only" value="misa.amis.vn" disabled/>
+                </div>
+            </div>
+            <!-- validate text field -->
+            <div class="col">
+                <label class="col__title">Validate Input Field</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--have-icon-after text-field__input--validate" value="misa.amis.vn"/>
+                        <i class="fa-regular fa-circle-check icon-wrapper icon--primary-color text-field__icon--after"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- verifying text field -->
+            <div class="col">
+                <label class="col__title">Verifying Input Field</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--have-icon-after text-field__input--verifying" value="Some things"/>
+                        <i class="fa-solid fa-circle-notch icon-wrapper icon--primary-color text-field__icon--after"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- text field with action, with icon hover and with icon press -->
+            <div class="col">
+                <label class="col__title">Text Field with action, hover and press</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--have-icon text-field__input--with-icon" placeholder="Watermark..."/>
+                        <i class="fa-solid fa-magnifying-glass icon-wrapper text-field__icon text-field__icon--with-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dialog, popup and form -->
+    <div class="container">
+        <h2>Dialog, Popup and Form</h2>
+        <div class="row">
+            <!-- dialog -->
+            <div class="col">
+                <label class="col__title">Dialog</label>
+                <div class="dialog">
+                    <div class="dialog__header">
+                        <h3 class="dialog__title">Tiêu đề</h3>
+                        <i class="fa-solid fa-xmark icon-wrapper icon--close-color"></i>
+                    </div>
+                    <div class="dialog__body">
+                        <div class="icon icon-warning"></div>
+                        <p>Mô tả</p>
+                    </div>
+                    <div class="dialog__footer">
+                        <button class="btn btn--secondary">Button 2</button>
+                        <button class="btn btn--primary">Button 1</button>
+                    </div>
+                </div>
+            </div>
+            <!-- popup or form -->
+            <div class="col">
+                <label class="col__title">Popup or Form</label>
+                <div class="popup">
+                    <!-- form header -->
+                    <div class="popup__header">
+                        <div>
+                            <h3 class="popup__title">Đăng ký tài khoản</h3>
+                            <i class="fa-solid fa-xmark icon-wrapper icon--close-color"></i>
+                        </div>
+                        <p class="popup__desc">Vui lòng điền các thông tin dưới đây</p>
+                    </div>
+                    <!-- form body -->
+                    <div class="popup__body">
+                        <div class="text-field">
+                            <label class="text-field__title">Họ và tên<span>*</span></label>
+                            <input class="text-field__input text-field__input--nomal" placeholder="Họ và tên đầy đủ"/>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Giới tính</label>
+                            <div class="text-field__wrapper--radio-input">
+                                <input class="text-field__input--radio-input" type="radio" id="male" name="gender" value="male">
+                                <label class="text-field__label--radio-input" for="male">Nam</label>
+                                <input class="text-field__input--radio-input" type="radio" id="female" name="gender" value="female">
+                                <label class="text-field__label--radio-input" for="female">Nữ</label>
+                            </div>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Ngày sinh<span>*</span></label>
+                            <input type="date" class="text-field__input text-field__input--nomal"/>
+                        </div>
+                        <div class="text-field">
+                            <label class="text-field__title">Địa chỉ email</label>
+                            <input class="text-field__input text-field__input--nomal" placeholder="example@email.com"/>
+                        </div>
+                    </div>
+                    <!-- form footer -->
+                    <div class="popup__footer">
+                        <button class="btn btn--secondary">Hủy</button>
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- toast message -->
+    <div class="container">
+        <h2>Toast Message</h2>
+        <div class="row">
+            <!-- success -->
+            <div class="col">
+                <label class="col__title">Thành công</label>
+                <div class="toast-message">
+                    <div class="toast-message__content">
+                        <div class="toast-message__info">
+                            <i class="fa-solid fa-circle-check icon-wrapper icon--primary-color toast-message__icon-info"></i>
+                            <span class="toast-message__type toast-message__type--success">Thành công!</span>
+                            <span class="toast-message__desc">&nbsp Công việc đã bị xóa.</span>
+                        </div>
+                        <span class="toast-message__help">Hoàn tác</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- error -->
+            <div class="col">
+                <label class="col__title">Lỗi</label>
+                <div class="toast-message">
+                    <div class="toast-message__content toast-message__content--error">
+                        <i class="fa-solid fa-circle-check icon-wrapper icon--error-color toast-message__icon-info"></i>
+                        <div class="toast-message__info toast-message__info--error">
+                            <div>
+                                <span class="toast-message__type toast-message__type--error">Lỗi!</span>
+                                <span class="toast-message__desc">&nbsp Không thể cập nhật được dữ liệu. Vui lòng kiểm tra lại kết nối internet.</span>
+                            </div>
+                            <a class="toast-message__help">Xem hướng dẫn</a>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- warning -->
+            <div class="col">
+                <label class="col__title">Cảnh báo</label>
+                <div class="toast-message">
+                    <div class="toast-message__content toast-message__content--warning">
+                        <div class="toast-message__info">
+                            <i class="fa-solid fa-circle-exclamation icon-wrapper icon--warning-color toast-message__icon-info"></i>
+                            <span class="toast-message__type toast-message__type--warning">Cảnh báo!</span>
+                            <span class="toast-message__desc">&nbsp Dữ liệu của bạn đã bị thay đổi bởi người dùng khác.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- info -->
+            <div class="col">
+                <label class="col__title">Thông tin</label>
+                <div class="toast-message">
+                    <div class="toast-message__content toast-message__content--info">
+                        <div class="toast-message__info">
+                            <i class="fa-solid fa-circle-exclamation icon-wrapper icon--info-color toast-message__icon-info"></i>
+                            <span class="toast-message__type toast-message__type--info">Thông tin!</span>
+                            <span class="toast-message__desc">&nbsp Bạn nên đọc kỹ nội dung trước khi gửi phê duyệt.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-xmark toast-message__icon--close"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- table -->
+    <div class="container container--table">
+        <h2>Table</h2>
+        <div class="row">
+            <div class="col">
+                <label class="col__title">Table</label>
+                <table class="table table--demo">
+                    <!-- header -->
+                    <thead class="table-head">
+                        <tr class="table-head__row">
+                            <th class="table-head__col">
+                                <input type="checkbox" class="table__check"/>
+                            </th>
+                            <th class="table-head__col">Header 1</th>
+                            <th class="table-head__col table-head__col--gmail">
+                                Header 2
+                            </th>
+                            <th class="table-head__col">Header 3</th>
+                            <th class="table-head__col">Header 4</th>
+                        </tr>
+                    </thead>
+                    <!-- body -->
+                    <tbody class="table-body">
+                        <tr class="table-body__row">
+                            <td class="table-body__col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Eunice Olson</td>
+                            <td class="table-body__col">Eunice_Olson99@gmail.com</td>
+                            <td class="table-body__col">325.806.8989 x04169</td>
+                            <td class="table-body__col">8872 Frieda Mountains, Port</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__Col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Perry Lakin</td>
+                            <td class="table-body__col">Perry_Lakin@hotmail.com</td>
+                            <td class="table-body__col">838.389.6051 x442</td>
+                            <td class="table-body__col">487 Tad Via, Justinetown</td>
+                        </tr>
+                        <tr class="table-body__row table-body__row--checked">
+                            <td class="table-body__col">
+                                <input type="checkbox" class="table__check" checked/>
+                            </td>
+                            <td class="table-body__col">Eunice Olson</td>
+                            <td class="table-body__col">Eunice_Olson99@gmail.com</td>
+                            <td class="table-body__col">325.806.8989 x04169</td>
+                            <td class="table-body__col">8872 Frieda Mountains, Port</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__Col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Perry Lakin</td>
+                            <td class="table-body__col">Perry_Lakin@hotmail.com</td>
+                            <td class="table-body__col">838.389.6051 x442</td>
+                            <td class="table-body__col">487 Tad Via, Justinetown</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Eunice Olson</td>
+                            <td class="table-body__col">Eunice_Olson99@gmail.com</td>
+                            <td class="table-body__col">325.806.8989 x04169</td>
+                            <td class="table-body__col">8872 Frieda Mountains, Port</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__Col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Perry Lakin</td>
+                            <td class="table-body__col">Perry_Lakin@hotmail.com</td>
+                            <td class="table-body__col">838.389.6051 x442</td>
+                            <td class="table-body__col">487 Tad Via, Justinetown</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Eunice Olson</td>
+                            <td class="table-body__col">Eunice_Olson99@gmail.com</td>
+                            <td class="table-body__col">325.806.8989 x04169</td>
+                            <td class="table-body__col">8872 Frieda Mountains, Port</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__Col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Perry Lakin</td>
+                            <td class="table-body__col">Perry_Lakin@hotmail.com</td>
+                            <td class="table-body__col">838.389.6051 x442</td>
+                            <td class="table-body__col">487 Tad Via, Justinetown</td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__col">
+                                <input type="checkbox" class="table__check"/>
+                            </td>
+                            <td class="table-body__col">Eunice Olson</td>
+                            <td class="table-body__col">Eunice_Olson99@gmail.com</td>
+                            <td class="table-body__col">325.806.8989 x04169</td>
+                            <td class="table-body__col">8872 Frieda Mountains, Port</td>
+                        </tr>
+                    </tbody>
+                    <!-- footer -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <div class="table-foot__row">
+                                    <div class="table-foot__total-records">
+                                        Total: 9 records
+                                    </div>
+                                    <div class="table-options">
+                                        <span class="table-options__title">Record/Page</span>
+                                        <div class="table-options__picker">
+                                            <span class="table-options__record-number">50</span>
+                                            <i class="fa-solid fa-chevron-down icon--sm table-options__record-icon"></i>
+                                        </div>
+                                        <span class="table-options__record-info"><span>1</span> - <span>9</span> records</span>
+                                        <div class="table-options__wrapper-btn">
+                                            <i class="fa-solid fa-chevron-left icon--lg table-options__btn-left"></i>
+                                            <i class="fa-solid fa-chevron-right icon--lg table-options__btn-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- combobox -->
+    <div class="container">
+        <h2>Combobox</h2>
+        <div class="row">
+            <!-- nomal and hover -->
+            <div class="col">
+                <label class="col__title">Nomal and Hover</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--nomal text-field__input--combobox" placeholder="Type here"/>
+                        <i class="fa-solid fa-chevron-down icon--md text-field__icon--combobox"></i>
+                    </div>  
+                </div>
+            </div>
+            <!-- searching -->
+            <div class="col">
+                <label class="col__title">Searching</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--combobox" value="Hải" autofocus/>
+                        <i class="fa-solid fa-chevron-down icon--md text-field__icon--combobox"></i>
+                    </div>  
+                    <div class="combobox__searching">
+                        <i class="fa-solid fa-circle-notch icon--xxl icon--primary-color"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- result -->
+            <div class="col">
+                <label class="col__title">Result</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--combobox" value="Hải"/>
+                        <i class="fa-solid fa-chevron-down icon--md text-field__icon--combobox"></i>
+                    </div>  
+                    <div class="combobox__result-list">
+                        <p class="combobox__result">Hải Phòng</p>
+                        <p class="combobox__result">Hải Dương</p>
+                    </div>
+                </div>
+            </div>
+            <!-- error-->
+            <div class="col">
+                <label class="col__title">Error</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--error text-field__input--combobox" placeholder="- Chọn giá trị -"/>
+                        <i class="fa-solid fa-chevron-down icon--md text-field__icon--combobox"></i>
+                    </div>  
+                    <p class="text-field__desc-error">Error message</p>
+                </div>
+            </div>
+             <!-- select -->
+             <div class="col">
+                <label class="col__title">Select combobox</label>
+                <div class="text-field">
+                    <label class="text-field__title">Field label</label>
+                    <div class="text-field__body">
+                        <input class="text-field__input text-field__input--combobox" placeholder="Type here"/>
+                        <i class="fa-solid fa-chevron-down icon--md text-field__icon--combobox"></i>
+                    </div>  
+                    <div class="combobox__result-list">
+                        <div class="combobox__result combobox__result--title">
+                            - Chọn giá trị -
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="combobox__result">Hà Nội</p>
+                        <p class="combobox__result">TP. Hồ Chí Minh</p>
+                        <p class="combobox__result">Đà Nẵng</p>
+                        <p class="combobox__result">Hải Phòng</p>
+                        <p class="combobox__result">Hải Dương</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* form for create new employee */
+.form-wrapper {
+    display: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.form--employee {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* header */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+.form-header__left {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.form-header__left label {
+    margin-left: 4px;
+}
+
+.form-header__left div {
+    display: flex;
+    align-items: center;
+}
+
+.form-header__right {
+    display: flex;
+}
+
+.form-header__right #btn-close {
+    margin-left: 12px;
+}
+
+.form-header__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #212121;
+    margin: 0;
+}
+
+/* content */
+.form-content {
+    padding: 20px 0 12px 0;
+}
+
+.form-content__top {
+    display: flex;
+    column-gap: 40px;
+}
+
+.form-id-name {
+    display: flex;
+    column-gap: 16px;
+}
+
+.form-id__input {
+    width: 140px;
+    min-width: 10px !important;
+}
+
+.form-date-gender {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+}
+
+.form-gender-input {
+    margin-top: 12px;
+}
+
+.form-content .text-field {
+    padding-bottom: 4px;
+}
+
+.form-date-input {
+    width: 140px;
+    min-width: 10px !important;
+}
+
+.form-id-card__wrapper {
+    display: flex;
+    column-gap: 16px;
+}
+
+.form-id-card__input {
+    flex: 1;
+}
+
+.form-id-card__input input {
+    width: 100%;
+}
+
+.form-input--w-100, .form-input--w-100 input {
+    width: 100%;
+}
+
+.form-content__down {
+    margin-top: 24px;
+}
+
+.form-comunication, .form-bank {
+    display: flex;
+    column-gap: 16px;
+}
+
+.form-wrapper hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-border-default);
+    margin: 16px 0;
+}
+
+/* footer */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}

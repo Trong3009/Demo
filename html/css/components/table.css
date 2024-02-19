@@ -1,0 +1,240 @@
+/* css table */
+.table {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.table--w-100 {
+    width: 100%;
+}
+
+.table--demo {
+    width: 880px;
+}
+
+.table-head__row, .table-body__row, .table-foot__row {
+    height: 48px;
+}
+
+/* css col second and col third */
+.table-head__col:nth-child(2), .table-body__col:nth-child(2) {
+    border-right: 1px solid var(--color-border-default);
+} 
+
+.table-head__col:nth-child(3), .table-body__col:nth-child(3) {
+    padding-left: 20px;
+} 
+
+/* css col and row in table */
+.table-head__row {
+    background-color: #f5f5f5;
+}
+
+.table-head__col, .table-body__col {
+    text-align: start;
+    padding: 0 6px;
+}
+
+.table-head__col {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    border-top: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-default);
+}
+
+/* col filter by gmail */
+.table-head__col--gmail { 
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-head__filter-icon {
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-left: 16px;
+}
+
+/* table body */
+.table-body__row {
+    background-color: #ffffff;
+}
+
+.table-body__row:hover {
+    background-color: #f8f8f8;
+}
+
+.table-body__row--checked {
+    background-color: #E7F5EC;
+}
+
+.table-body__row--checked:hover {
+    background-color: #E7F5EC;
+}
+
+.table-body__col {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    border-bottom: 1px solid var(--color-border-default);
+}
+
+.table__col-date {
+    width: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+.table__col-gender {
+    text-align: center;
+    width: 60px;
+    padding: 0;
+}
+
+.table__col-func {
+    /* text-align: center; */
+    width: 92px;
+}
+
+.table__check {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 16px;
+    accent-color: var(--color-primary);
+}
+
+
+.table-body__func {
+    height: 48px;
+    color: #007AFF;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* table footer */
+.table-foot {
+    width: 100%;
+    height: 48px;
+}
+
+.table-foot__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+}
+
+.table-foot__total-records {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+}
+
+/* table footer right */
+.table-options {
+    display: flex;
+    align-items: center;
+}
+
+.table-options__title {
+    margin-right: 64px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #616161;
+}
+
+.table-options__picker {
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 76px;
+    height: 36px;
+    padding: 0 12px 0 12px;
+    border-radius: 4px;
+    border: 1px solid #d5d6d7;
+}
+
+.table-options__record-number {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+} 
+
+.table-options__record-icon {
+    color: #424242;
+    cursor: pointer;
+}
+
+.table-options__select {
+    display: none;
+    position: absolute;
+    bottom: 36px;
+    right: 0;
+    width: 76px;
+}
+
+.table-options__select div {
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.table-options__select p {
+    padding: 0 12px !important;
+}
+
+.table-options__record-info {
+    font-weight: 700;
+    font-size: 14px;
+    color: #616161;
+    margin: 0 20px 0 16px;
+}
+
+.table-options__record-info span {
+    color: #000000;
+}
+
+.table-options__wrapper-btn {
+    display: flex;
+}
+
+.table-options__btn-left {
+    color: #bdbdbd;
+    margin: 0 8px 0 22px;
+    cursor: pointer;
+}
+
+.table-options__btn-right {
+    color: #424242;
+    cursor: pointer;
+}
+
+/* css options when select icon in last col */
+.table-selected-options {
+    position: relative;
+    border: 1px solid #0075C0;
+}
+
+.table-selected-options .table-selected-options__result {
+    display: block;
+}
+
+.table-selected-options__result {
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.table-selected-options__result div {
+    width: 132px !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}

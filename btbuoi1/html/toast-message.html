@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1ee286c6eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/toast-message/toast-message.css"/>
+  </head>
+  <body>
+    <h3>Toast message</h3>
+    <button onclick="showMess('toast-success')">Click me</button>
+    <button onclick="showMess('toast-error')">Click me</button>
+    <button onclick="showMess('toast-warning')">Click me</button>
+    <button onclick="showMess('toast-info')">Click me</button>
+
+    <div class="snackbar-container">
+      <div id="toast-success" class="toast">
+        <div class="message">
+          <span class="success"
+            ><i class="fa-solid fa-circle-check"></i> Thành công!</span
+          >
+          Công việc hoàn tất
+        </div>
+        <div class="action">
+          <span class="message-action">Hoàn tác</span>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div id="toast-error" class="toast">
+        <div class="message">
+          <span class="error"
+            ><i class="fa-solid fa-circle-xmark"></i> Lỗi!
+          </span>
+          Không thể cập nhật dữ liệu
+        </div>
+        <div class="action">
+          <span class="message-action"></span> <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div id="toast-warning" class="toast">
+        <div class="message">
+          <span class="warning"><i class="fa-solid fa-circle-info"></i>Cảnh báo!</span> Dữ liệu thay đổi bởi người dùng
+          khác
+        </div>
+        <div class="action">
+          <span class="message-action"></span> <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div id="toast-info" class="toast">
+        <div class="message">
+          <span class="info"><i class="fa-solid fa-circle-info"></i>Thông tin:</span> Đọc kĩ nội dung trước khi bấm duyệt
+        </div>
+        <div class="action">
+          <span class="message-action"></span> <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <script>
+      const showMess = (messageType) => {
+        let x = document.getElementById(messageType);
+        x.classList.add("show");
+        setTimeout(() => {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@import url('../../main.css');
+
+.input-container.input--radio-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.input--radio-btn p {
+  margin-bottom: 8px;
+  font-size: var(--font-size-menu);
+  font-weight: var(--font-weight-menu);
+  color: var(--font-color-primary);
+}
+
+.input--radio-btn label {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  margin-right: 8px;
+}
+
+input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  outline: 1px solid var(--font-color-border);
+  width: 14px;
+  height: 14px;
+  transition: 0.1s all ease-in-out;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border: 3.5px solid var(--color-grey-0);
+  background-color: var(--color-light-green-500);
+  outline: 1px solid var(--color-light-green-500);
+}
+
+input[type="radio"]:active {
+  border: 1px solid var(--color-light-green-500);
+  outline: 1px solid var(--color-light-green-500);
+  background-color: var(--color-grey-0);
+}
+
+/* Trong form employee*/
+
+.form-staff .input-container.input--radio-btn {
+  margin-left: 8px;
+}

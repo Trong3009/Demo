@@ -1,0 +1,202 @@
+/* css button */
+.btn {
+    height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* nút chính */
+.btn--primary {
+    min-width: 80px;
+    background-color: var(--color-primary);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    color: #ffffff;
+    border: none;
+    padding: 0 16px;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-hover);
+}
+
+.btn--primary:active {
+    background-color: var(--color-focus);
+}
+
+.btn--primary:disabled {
+    background-color: var(--color-disable);
+    cursor: not-allowed;
+}
+
+/* nút phụ */
+.btn--secondary {
+    min-width: 80px;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #1f1f1f;
+    border: 1px solid var(--color-border-default); 
+    margin-top: 2px;
+}
+
+.btn--secondary:hover {
+    color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.btn--secondary:active {
+    color: var(--color-focus);
+    border-color: var(--color-focus);
+}
+
+.btn--secondary:disabled {
+    color: #c8c8c8;
+    border-color: #c8c8c8;
+    cursor: not-allowed;
+}
+
+/* button link */
+.btn--link {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-primary);
+    border: none; 
+}
+
+.btn--link:hover {
+    color: var(--color-hover);
+}
+
+.btn--link:active {
+    color: var(--color-focus);
+}
+
+.btn--link:disabled {
+    color: #9CD5B3;
+    cursor: not-allowed;
+}
+
+/* button icon */
+.btn--icon {
+    width: 40px;
+    height: 36px;
+    background-color: #CEEAD9;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--icon:hover {
+    background-color: #E7F5EC;
+}
+
+.btn--icon:active {
+    background-color: #9CD5B3;
+}
+
+.btn--icon:disabled {
+    background-color: #E7F5EC;
+    cursor: not-allowed;
+}
+
+.btn--icon:disabled i {
+    color: #6BC18D;
+    cursor: not-allowed;
+}
+
+/* combo button */
+.btn--combo {
+    background-color: var(--color-primary);
+    text-align: center;
+    border: none;
+}
+
+.btn__label--combo {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.btn__icon--combo {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 7px 12px;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.btn--combo:hover {
+    background-color: var(--color-hover);
+}
+
+.btn--combo:active {
+    background-color: var(--color-focus);
+}
+
+.btn--combo:disabled {
+    background-color: var(--color-disable);
+    cursor: not-allowed;
+}
+
+.btn--combo:disabled .btn__icon {
+    cursor: not-allowed;
+}
+
+.btn--combo:disabled .btn__label {
+    cursor: not-allowed;
+}
+
+/* button with icon */
+.btn--btn-with-icon {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    text-align: center;
+    border: none;
+}
+
+.btn__label--btn-with-icon {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    padding-right: 16px;
+}
+
+.btn__icon--btn-with-icon {
+    color: #ffffff;
+    padding: 0 4px 0 12px;
+}
+
+.btn--btn-with-icon:hover {
+    background-color: var(--color-hover);
+}
+
+.btn--btn-with-icon:active {
+    background-color: var(--color-focus);
+}
+
+.btn--btn-with-icon:disabled {
+    background-color: var(--color-disable);
+    cursor: not-allowed;
+}
+
+.btn--btn-with-icon:disabled label {
+    cursor: not-allowed;
+}
+
+/* nếu có nhiều button gần nhau thì đặt margin giữa chúng */
+button + button {
+    margin-left: 8px;
+}

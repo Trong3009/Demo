@@ -1,0 +1,229 @@
+@import url(./components/header.css);
+@import url(./components/navbar.css);
+
+/* content */
+.container {
+    width: calc(100% - 200px);
+    height: calc(100vh - 56px);
+    background-color: #EEEFF1;
+    float: left;
+    padding: 16px 24px 0 24px;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__info {
+    display: flex;
+    align-items: center;
+}
+
+.container__info span {
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 12px;
+    color: #1F1F20;
+}
+
+.container__options {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+/* content data table */
+.container__content {
+    position: relative;
+    height: calc(100% - 68px);
+    background-color: #fff;
+    margin-top: 16px;
+    border-radius: 4px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.039);
+}
+
+/* search, filter and setting */
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.content__header-right {
+    display: flex;
+    column-gap: 12px;
+}
+
+.filter {
+    padding: 0 16px 12px 16px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    background-color: #fff;
+}
+
+.filter__type {
+    width: fit-content;
+    background-color: #F2F2F2;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    border-radius: 4px;
+}
+
+.filter__type-name {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+
+.filter__type span {
+    font-weight: 500;
+    color: #000;
+}
+
+.filter__delete {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FF2B2B;
+    cursor: pointer;
+}
+
+/* css multi select */
+.multi-select {
+    display: none;
+    height: 36px;
+    margin: 4px 16px 16px 16px;
+    align-items: center;
+}
+
+.multi-select__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #171B2A;
+}
+
+.multi-select__unchecked {
+    font-size: 14px;
+    font-weight: 400;
+    color: #E61D1D;
+    margin: 0 24px 0 16px;
+    cursor: pointer;
+}
+
+.multi-select__unchecked:hover {
+    color: rgba(230, 29, 29, 0.5);
+}
+
+.multi-select__unchecked:active {
+    color: #E61D1D;
+}
+
+.multi-select__delete {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border-default);
+    background-color: #fff;
+    padding: 0 16px 0 8px;
+    margin-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.multi-select__delete img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.multi-select__delete label {
+    cursor: pointer;
+}
+
+.multi-select__delete:hover {
+    border-color: rgba(230, 29, 29, 0.5);
+}
+
+.multi-select__delete:hover label {
+    color: rgba(230, 29, 29, 0.5);
+}
+
+.multi-select__delete:active {
+    border-color: #E61D1D;
+}
+
+.multi-select__delete:active label {
+    color: #E61D1D;
+}
+
+/* css table data */
+.content-data {
+    height: calc(100% - 152px);
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.content-data-with-mulit-select {
+    height: calc(100% - 208px) !important;
+}
+
+.content-data::-webkit-scrollbar {
+    display: none;
+}
+
+.content-data::-webkit-scrollbar-track {
+    display: none;
+}
+
+.content-data__header {
+    position: sticky;
+    top: 0px;
+}
+
+/* pagination */
+.pagination {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* css loading */
+.loading-wrapper {
+    display: none;
+}
+
+.loading-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.loading-data:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid var(--color-primary);
+    border-color: var(--color-primary) transparent var(--color-primary) transparent;
+    animation: loading-data 1s linear infinite;
+}
+
+@keyframes loading-data {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

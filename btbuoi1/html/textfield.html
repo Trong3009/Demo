@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1ee286c6eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/textfield/textfield.css"/>
+  </head>
+  <body>
+    <label>
+      Primary
+      <span>
+        <input
+          class="pri-input"
+          type="text"
+          name="input"
+          placeholder="Primary input field"
+        />
+      </span>
+    </label>
+
+    <label>
+      Error
+      <span>
+        <input class="err-input" type="text" placeholder="Error" />
+      </span>
+      <small class="helper-text">
+        &lt;Tên trường&gt; không được để trống
+      </small>
+    </label>
+
+    <label>
+      Read-only
+      <span>
+        <input
+          class="readonly-input"
+          type="text"
+          readonly
+          placeholder="Read-only"
+        />
+      </span>
+    </label>
+
+    <label>
+      Validated
+      <span class="validated">
+        <input
+          class="validated-input"
+          type="text"
+          name="input"
+          placeholder="Validated input field"
+        />
+      </span>
+    </label>
+
+    <label>
+      Search (With action)
+      <form>
+        <span class="search-container">
+          <form>
+            <input class="search-input" placeholder="Watermark..." />
+            <div class="icon-container">
+              <img src="../asset/search.svg" alt="" />
+            </div>
+          </form>
+        </span>
+      </form>
+    </label>
+  </body>
+</html>

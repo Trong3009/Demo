@@ -1,0 +1,79 @@
+/* css header */
+.header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    float: left;
+}
+
+/* header left */
+.header__left {
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 0 16px;
+    background-color: #041434;
+}
+
+.logo {
+    height: 36px;
+    flex: 1;
+    background-image: url(../../../assets/img/Logo_Module_TiengViet_White.66947422.svg);
+    background-position: start center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1F1F20;
+    cursor: pointer;
+}
+
+/* header right */
+.header__right {
+    flex:1;
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* company */
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-info__name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1F1F20;
+    margin: 0 8px 0 16px;
+    color: #666;
+}
+
+/* user info */
+.user-info {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.user-info__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.user-info__name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+    margin: 0 8px 0 4px;
+}

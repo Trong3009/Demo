@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '@mui/material'
-import AppBar from '../../components/AppBar'
+import AppBar from '~/components/AppBar'
 import BoardsBar from './BoardsBar'
 import BoardsContent from './BoardsContent'
 
